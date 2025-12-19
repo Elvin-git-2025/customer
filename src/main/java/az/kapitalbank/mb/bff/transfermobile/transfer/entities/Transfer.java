@@ -1,6 +1,5 @@
 package az.kapitalbank.mb.bff.transfermobile.transfer.entities;
 
-import az.kapitalbank.mb.bff.transfermobile.customer.entities.Customer;
 import az.kapitalbank.mb.bff.transfermobile.transfer.enums.TransferStatus;
 import az.kapitalbank.mb.bff.transfermobile.transfer.enums.TransferType;
 import jakarta.persistence.Entity;
@@ -37,6 +36,7 @@ public class Transfer {
     TransferStatus status;
     BigDecimal tariff;
     BigDecimal commission;
+    BigDecimal totalAmount;
     String payee;
     LocalDateTime createdAt;
 }

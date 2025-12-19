@@ -1,8 +1,9 @@
-package az.kapitalbank.mb.bff.transfermobile.customer.Controllers;
+package az.kapitalbank.mb.bff.transfermobile.customer.controllers;
 
 import az.kapitalbank.mb.bff.transfermobile.customer.dtos.requests.CreateCustomerRequest;
 import az.kapitalbank.mb.bff.transfermobile.customer.dtos.responses.CustomerResponse;
 import az.kapitalbank.mb.bff.transfermobile.customer.entities.Customer;
+import az.kapitalbank.mb.bff.transfermobile.customer.repositories.CustomerRepository;
 import az.kapitalbank.mb.bff.transfermobile.customer.services.CustomerService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -19,11 +20,17 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/customer")
+@RequestMapping("/api/v1/customers")
 @RequiredArgsConstructor
 public class CustomerController {
 
     private final CustomerService customerService;
+    private final CustomerRepository customerRepository;
+
+    @GetMapping("/{id}/exists")
+    public boolean exists(@PathVariable Long id) {
+        return customerRepository.existsById(id);
+    }
 
     @PostMapping("/create")
     public ResponseEntity<CustomerResponse> create(

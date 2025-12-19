@@ -1,13 +1,12 @@
-package az.kapitalbank.mb.bff.transfermobile;
+package az.kapitalbank.mb.bff.transfermobile.customer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
 @SpringBootApplication
-public class BffTransferMobileApplication {
+public class CustomerServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BffTransferMobileApplication.class, args);
+        SpringApplication.run(CustomerServiceApplication.class, args);
     }
 }

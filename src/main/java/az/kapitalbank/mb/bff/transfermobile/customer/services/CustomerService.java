@@ -26,6 +26,10 @@ public class CustomerService {
         return customerMapper.toResponse(savedCustomer);
     }
 
+    public boolean existsById(Long id) {
+        return customerRepository.existsById(id);
+    }
+
     public CustomerResponse getCustomerById(Long id) {
         Customer customer = customerRepository.findById(id)
                 .orElseThrow(() -> new CustomerNotFoundException(id));

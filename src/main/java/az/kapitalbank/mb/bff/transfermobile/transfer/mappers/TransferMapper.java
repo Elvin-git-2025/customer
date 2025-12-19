@@ -4,12 +4,14 @@ import az.kapitalbank.mb.bff.transfermobile.transfer.dtos.requests.CreateTransfe
 import az.kapitalbank.mb.bff.transfermobile.transfer.dtos.responses.TransferResponse;
 import az.kapitalbank.mb.bff.transfermobile.transfer.entities.Transfer;
 import org.mapstruct.Mapper;
-
 import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface TransferMapper {
-    Transfer convertToEntity(CreateTransferRequest createTransferRequest);
+
     TransferResponse convertToResponse(Transfer transfer);
+
+    Transfer convertToEntity(CreateTransferRequest request);
+
     List<TransferResponse> convertToResponseList(List<Transfer> transfers);
 }
