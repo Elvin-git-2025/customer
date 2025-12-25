@@ -1,9 +1,9 @@
 spring:
   application:
-    name: transfer-service
+    name: customer-service
 
   datasource:
-    url: jdbc:mysql://localhost:3306/transfer
+    url: jdbc:mysql://localhost:3306/Customer
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver

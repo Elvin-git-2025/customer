@@ -9,9 +9,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 @EnableConfigurationProperties(CustomerServiceProperties.class)
 @SpringBootApplication
-public class BffTransferMobileApplication {
+public class CustomerServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BffTransferMobileApplication.class, args);
+        SpringApplication.run(CustomerServiceApplication.class, args);
     }
 }
