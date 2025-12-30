@@ -7,7 +7,6 @@ import az.kapitalbank.mb.bff.transfermobile.customer.entities.Customer;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
-
 import java.util.List;
 
 @Mapper(componentModel = "spring")
@@ -15,13 +14,16 @@ public interface CustomerMapper {
 
     @Mapping(
             target = "createdAt",
-            expression = "java(LocalDate.now().atStartOfDay())"
+            expression = "java(java.time.LocalDate.now().atStartOfDay())"
     )
     Customer toEntity(CreateCustomerRequest request);
 
     CustomerResponse toResponse(Customer customer);
 
-    void updateCustomerFromRequest(UpdateCustomerRequest request,@MappingTarget Customer customer);
+    void updateCustomerFromRequest(
+            UpdateCustomerRequest request,
+            @MappingTarget Customer customer
+    );
 
     List<CustomerResponse> toResponseList(List<Customer> customers);
 }
