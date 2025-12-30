@@ -1,6 +1,5 @@
 package az.kapitalbank.mb.bff.transfermobile.customer.services;
 
-
 import az.kapitalbank.mb.bff.transfermobile.customer.dtos.requests.CreateCustomerRequest;
 import az.kapitalbank.mb.bff.transfermobile.customer.dtos.requests.UpdateCustomerRequest;
 import az.kapitalbank.mb.bff.transfermobile.customer.dtos.responses.CustomerResponse;
@@ -10,7 +9,6 @@ import az.kapitalbank.mb.bff.transfermobile.customer.mappers.CustomerMapper;
 import az.kapitalbank.mb.bff.transfermobile.customer.repositories.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
 import java.time.LocalDate;
 import java.util.List;
 
