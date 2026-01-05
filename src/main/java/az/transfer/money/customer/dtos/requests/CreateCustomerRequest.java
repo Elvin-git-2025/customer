@@ -1,29 +1,33 @@
-package az.kapitalbank.mb.bff.transfermobile.customer.dtos.requests;
+package az.transfer.money.customer.dtos.requests;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
 import lombok.Getter;
 import lombok.Setter;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDate;
 
+
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UpdateCustomerRequest {
+public class CreateCustomerRequest {
+
     @NotBlank
     String firstName;
+
     @NotBlank
     String lastName;
+
     @NotBlank
     String pin;
-    @NotBlank
+
+    @NotNull
     @JsonFormat(pattern = "yyyy-MM-dd")
     LocalDate dateOfBirth;
 }
+

@@ -1,12 +1,12 @@
-package az.kapitalbank.mb.bff.transfermobile.customer.services;
+package az.transfer.money.customer.services;
 
-import az.kapitalbank.mb.bff.transfermobile.customer.dtos.requests.CreateCustomerRequest;
-import az.kapitalbank.mb.bff.transfermobile.customer.dtos.requests.UpdateCustomerRequest;
-import az.kapitalbank.mb.bff.transfermobile.customer.dtos.responses.CustomerResponse;
-import az.kapitalbank.mb.bff.transfermobile.customer.entities.Customer;
-import az.kapitalbank.mb.bff.transfermobile.customer.exceptions.CustomerNotFoundException;
-import az.kapitalbank.mb.bff.transfermobile.customer.mappers.CustomerMapper;
-import az.kapitalbank.mb.bff.transfermobile.customer.repositories.CustomerRepository;
+import az.transfer.money.customer.dtos.requests.CreateCustomerRequest;
+import az.transfer.money.customer.dtos.requests.UpdateCustomerRequest;
+import az.transfer.money.customer.dtos.responses.CustomerResponse;
+import az.transfer.money.customer.entities.Customer;
+import az.transfer.money.customer.exceptions.CustomerNotFoundException;
+import az.transfer.money.customer.mappers.CustomerMapper;
+import az.transfer.money.customer.repositories.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;

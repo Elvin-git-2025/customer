@@ -1,4 +1,4 @@
-package az.kapitalbank.mb.bff.transfermobile.customer.entities;
+package az.transfer.money.customer.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

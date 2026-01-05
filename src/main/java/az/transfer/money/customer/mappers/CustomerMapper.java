@@ -1,9 +1,9 @@
-package az.kapitalbank.mb.bff.transfermobile.customer.mappers;
+package az.transfer.money.customer.mappers;
 
-import az.kapitalbank.mb.bff.transfermobile.customer.dtos.requests.CreateCustomerRequest;
-import az.kapitalbank.mb.bff.transfermobile.customer.dtos.requests.UpdateCustomerRequest;
-import az.kapitalbank.mb.bff.transfermobile.customer.dtos.responses.CustomerResponse;
-import az.kapitalbank.mb.bff.transfermobile.customer.entities.Customer;
+import az.transfer.money.customer.dtos.requests.CreateCustomerRequest;
+import az.transfer.money.customer.dtos.requests.UpdateCustomerRequest;
+import az.transfer.money.customer.dtos.responses.CustomerResponse;
+import az.transfer.money.customer.entities.Customer;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;

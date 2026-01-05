@@ -1,4 +1,4 @@
-package az.kapitalbank.mb.bff.transfermobile.customer.configuration;
+package az.transfer.money.customer.configuration;
 
 import lombok.Getter;
 import lombok.Setter;

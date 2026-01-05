@@ -1,4 +1,4 @@
-package az.kapitalbank.mb.bff.transfermobile.customer.exceptions;
+package az.transfer.money.customer.exceptions;
 
 import java.io.Serial;
 

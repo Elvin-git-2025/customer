@@ -1,6 +1,6 @@
-package az.kapitalbank.mb.bff.transfermobile;
+package az.transfer.money;
 
-import az.kapitalbank.mb.bff.transfermobile.customer.configuration.CustomerServiceProperties;
+import az.transfer.money.customer.configuration.CustomerServiceProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
