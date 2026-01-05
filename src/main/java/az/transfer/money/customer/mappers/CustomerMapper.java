@@ -14,7 +14,7 @@ public interface CustomerMapper {
 
     @Mapping(
             target = "createdAt",
-            expression = "java(java.time.LocalDate.now().atStartOfDay())"
+            expression =  "java(java.time.LocalDateTime.now())"
     )
     Customer toEntity(CreateCustomerRequest request);
 
